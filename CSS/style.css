@@ -205,7 +205,29 @@ body {
 .features .item:nth-child(4n) {
   margin-right: 0;
 }
-
+.features .item::before {
+  display: block;
+  content: "";
+  margin-bottom: 30px;
+  block-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--filter-bg-color);
+  height: 120px;
+  border-radius: 4px;
+}
+.item.icon-antena::before {
+  background-image: url(../images/icon/antenna-1.svg);
+}
+.item.icon-clok::before {
+  background-image: url(../images/icon/clock-2.svg);
+}
+.item.icon-diagram::before {
+  background-image: url(../images/icon/diagram-3.svg);
+}
+.item.icon-astronaut::before {
+  background-image: url(../images/icon/astronaut-4.svg);
+}
 .features .title {
   margin-top: 0;
   margin-bottom: 10px;
